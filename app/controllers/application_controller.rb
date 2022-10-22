@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::API
     # protect_from_forgery with: :exception
-
+    include ActionController::Helpers
     helper_method :current_user, :logged_in?
   
     private
