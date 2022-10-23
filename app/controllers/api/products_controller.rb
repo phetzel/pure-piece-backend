@@ -39,6 +39,6 @@ class Api::ProductsController < ApplicationController
 
     private
     def product_params
-        params.require(:chirp).permit(:title, :description, :price, :picture_url)
+        params.require(:product).permit(:title, :description, :price, :picture_url)
     end
 end
